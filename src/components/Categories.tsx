@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const callouts = [
   {
     name: 'Cosméticos',
@@ -6,7 +8,7 @@ const callouts = [
       'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
     imageAlt:
       'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    href: '#',
+    to: 'products/cosmeticos',
   },
   {
     name: 'Jóias',
@@ -15,7 +17,7 @@ const callouts = [
       'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
     imageAlt:
       'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-    href: '#',
+    to: 'products/joias',
   },
   {
     name: 'Outros',
@@ -23,7 +25,7 @@ const callouts = [
     imageSrc:
       'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
     imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-    href: '#',
+    to: 'products/other',
   },
 ];
 
@@ -44,10 +46,10 @@ export default function Categories() {
                   />
                 </div>
                 <h3 className='mt-6 text-sm text-gray-500'>
-                  <a href={callout.href}>
+                  <Link to={callout.to}>
                     <span className='absolute inset-0' />
                     {callout.name}
-                  </a>
+                  </Link>
                 </h3>
                 <p className='text-base font-semibold text-gray-900'>
                   {callout.description}
