@@ -5,6 +5,7 @@ import NotFound from './Pages/NotFound';
 import NavBar from './components/NavBar';
 import Products from './components/Products';
 import Categories from './components/Categories';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/categories' element={<Categories />} />
         </Route>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
