@@ -2,10 +2,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './Pages/Home';
 import NotFound from './Pages/NotFound';
-import NavBar from './components/NavBar';
+import NavBar from './components/navbar/NavBar';
 import Products from './components/Products';
 import Categories from './components/Categories';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
